@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "orion",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/theos/orion",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2e4d368231e88c797ab9879f8c018a50f4e25209"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "fee6933f37fde9a5e12a1e4aeaa93fe60116ff2a",
+        "version" : "1.2.2"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "04d4497be6b88e524a71778d828790e9589ae1c4",
+        "version" : "0.50700.0"
+      }
+    }
+  ],
+  "version" : 2
+}

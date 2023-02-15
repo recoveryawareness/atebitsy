@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F062C47299D22140070637A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F062C46299D22140070637A /* UIKit.framework */; };
+		6F062C49299D22140070637A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F062C48299D22140070637A /* Foundation.framework */; };
+		6F062C4B299D22140070637A /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F062C4A299D22140070637A /* CydiaSubstrate.framework */; };
+		6F062C59299D22140070637A /* atebitsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F062C58299D22140070637A /* atebitsy.h */; };
+		6F062C5C299D22140070637A /* atebitsy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F062C5B299D22140070637A /* atebitsy.mm */; };
+		6F062C68299D22660070637A /* TestFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F062C67299D22660070637A /* TestFileView.swift */; };
+		6F062C6B299D22C80070637A /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6F062C6A299D22C80070637A /* ArgumentParser */; };
+		6F062C6E299D23A20070637A /* Orion in Frameworks */ = {isa = PBXBuildFile; productRef = 6F062C6D299D23A20070637A /* Orion */; };
+		6F062C74299D24360070637A /* Tweak.x.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F062C73299D24360070637A /* Tweak.x.swift */; };
+		6F062C7F299D262F0070637A /* Tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F062C7D299D262E0070637A /* Tweak.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F062C43299D22140070637A /* atebitsy.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = atebitsy.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F062C46299D22140070637A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F062C48299D22140070637A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F062C4A299D22140070637A /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		6F062C4D299D22140070637A /* atebitsy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atebitsy-Prefix.pch"; sourceTree = "<group>"; };
+		6F062C50299D22140070637A /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinst; sourceTree = "<group>"; };
+		6F062C51299D22140070637A /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		6F062C52299D22140070637A /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postrm; sourceTree = "<group>"; };
+		6F062C53299D22140070637A /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
+		6F062C54299D22140070637A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		6F062C55299D22140070637A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.txt; sourceTree = "<group>"; };
+		6F062C57299D22140070637A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		6F062C58299D22140070637A /* atebitsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atebitsy.h; sourceTree = "<group>"; };
+		6F062C5A299D22140070637A /* atebitsy.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = atebitsy.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6F062C5B299D22140070637A /* atebitsy.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = atebitsy.mm; sourceTree = "<group>"; };
+		6F062C60299D22140070637A /* atebitsy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = atebitsy.plist; sourceTree = "<group>"; };
+		6F062C66299D22650070637A /* atebitsy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atebitsy-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F062C67299D22660070637A /* TestFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFileView.swift; sourceTree = "<group>"; };
+		6F062C73299D24360070637A /* Tweak.x.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweak.x.swift; sourceTree = "<group>"; };
+		6F062C7D299D262E0070637A /* Tweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweak.m; sourceTree = "<group>"; };
+		6F062C7E299D262E0070637A /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F062C3F299D22140070637A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F062C47299D22140070637A /* UIKit.framework in Frameworks */,
+				6F062C49299D22140070637A /* Foundation.framework in Frameworks */,
+				6F062C6B299D22C80070637A /* ArgumentParser in Frameworks */,
+				6F062C4B299D22140070637A /* CydiaSubstrate.framework in Frameworks */,
+				6F062C6E299D23A20070637A /* Orion in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F062C37299D22140070637A = {
+			isa = PBXGroup;
+			children = (
+				6F062C4C299D22140070637A /* atebitsy */,
+				6F062C45299D22140070637A /* Frameworks */,
+				6F062C44299D22140070637A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F062C44299D22140070637A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C43299D22140070637A /* atebitsy.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F062C45299D22140070637A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C46299D22140070637A /* UIKit.framework */,
+				6F062C48299D22140070637A /* Foundation.framework */,
+				6F062C4A299D22140070637A /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F062C4C299D22140070637A /* atebitsy */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C7A299D25DF0070637A /* Source */,
+				6F062C4D299D22140070637A /* atebitsy-Prefix.pch */,
+				6F062C58299D22140070637A /* atebitsy.h */,
+				6F062C5A299D22140070637A /* atebitsy.xm */,
+				6F062C5B299D22140070637A /* atebitsy.mm */,
+				6F062C4E299D22140070637A /* Package */,
+				6F062C56299D22140070637A /* Supporting Files */,
+				6F062C67299D22660070637A /* TestFileView.swift */,
+				6F062C66299D22650070637A /* atebitsy-Bridging-Header.h */,
+			);
+			path = atebitsy;
+			sourceTree = "<group>";
+		};
+		6F062C4E299D22140070637A /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C4F299D22140070637A /* DEBIAN */,
+				6F062C5D299D22140070637A /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		6F062C4F299D22140070637A /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C50299D22140070637A /* preinst */,
+				6F062C51299D22140070637A /* postinst */,
+				6F062C52299D22140070637A /* postrm */,
+				6F062C53299D22140070637A /* prerm */,
+				6F062C54299D22140070637A /* control */,
+				6F062C55299D22140070637A /* control.txt */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		6F062C56299D22140070637A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C57299D22140070637A /* PackageVersion.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F062C5D299D22140070637A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C5E299D22140070637A /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		6F062C5E299D22140070637A /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C5F299D22140070637A /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		6F062C5F299D22140070637A /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C60299D22140070637A /* atebitsy.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		6F062C7A299D25DF0070637A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C7C299D260C0070637A /* atebitsyTweakC */,
+				6F062C7B299D25F80070637A /* atebitsyTweak */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6F062C7B299D25F80070637A /* atebitsyTweak */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C73299D24360070637A /* Tweak.x.swift */,
+			);
+			path = atebitsyTweak;
+			sourceTree = "<group>";
+		};
+		6F062C7C299D260C0070637A /* atebitsyTweakC */ = {
+			isa = PBXGroup;
+			children = (
+				6F062C7E299D262E0070637A /* include */,
+				6F062C7D299D262E0070637A /* Tweak.m */,
+			);
+			path = atebitsyTweakC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F062C40299D22140070637A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F062C59299D22140070637A /* atebitsy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6F062C42299D22140070637A /* atebitsy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F062C63299D22140070637A /* Build configuration list for PBXNativeTarget "atebitsy" */;
+			buildPhases = (
+				6F062C3C299D22140070637A /* ShellScript */,
+				6F062C3D299D22140070637A /* ShellScript */,
+				6F062C3E299D22140070637A /* Sources */,
+				6F062C3F299D22140070637A /* Frameworks */,
+				6F062C40299D22140070637A /* Headers */,
+				6F062C41299D22140070637A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F062C70299D23AF0070637A /* PBXTargetDependency */,
+			);
+			name = atebitsy;
+			packageProductDependencies = (
+				6F062C6A299D22C80070637A /* ArgumentParser */,
+				6F062C6D299D23A20070637A /* Orion */,
+			);
+			productName = atebitsy;
+			productReference = 6F062C43299D22140070637A /* atebitsy.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F062C38299D22140070637A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6F062C42299D22140070637A = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 6F062C3B299D22140070637A /* Build configuration list for PBXProject "atebitsy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F062C37299D22140070637A;
+			packageReferences = (
+				6F062C69299D22C80070637A /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				6F062C6C299D23A20070637A /* XCRemoteSwiftPackageReference "orion" */,
+			);
+			productRefGroup = 6F062C44299D22140070637A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F062C42299D22140070637A /* atebitsy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F062C3C299D22140070637A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]; then\n    if [ \"${EasyDevUsePackageVersionPList}\" == \"YES\" ]; then\n        packInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/Supporting Files/PackageVersion.plist\"\n        # 兼容旧版工程\n        if [ ! -f \"${packInfoPlist}\" ]; then\n            packInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\n        fi\n        buildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\n        buildNumber=$(($buildNumber + 1))\n        /usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\n        echo \"build number increase\"\n    fi\nfi\n";
+		};
+		6F062C3D299D22140070637A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/ed --xcbp-logos";
+		};
+		6F062C41299D22140070637A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/ed --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F062C3E299D22140070637A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F062C7F299D262F0070637A /* Tweak.m in Sources */,
+				6F062C74299D24360070637A /* Tweak.x.swift in Sources */,
+				6F062C68299D22660070637A /* TestFileView.swift in Sources */,
+				6F062C5C299D22140070637A /* atebitsy.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F062C70299D23AF0070637A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6F062C6F299D23AF0070637A /* OrionPlugin */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F062C61299D22140070637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/lib",
+					"$(EasyDevTheosPath)/lib",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atebitsy/atebitsy-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/lib",
+					"$(EasyDevTheosPath)/lib",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F062C62299D22140070637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/lib",
+					"$(EasyDevTheosPath)/lib",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atebitsy/atebitsy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/lib",
+					"$(EasyDevTheosPath)/lib",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6F062C64299D22140070637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR2XCKHLAR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = YES;
+				EasyDevBuildPackageOnAnyBuild = YES;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = Twitter;
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "atebitsy/atebitsy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F062C65299D22140070637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR2XCKHLAR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = YES;
+				EasyDevBuildPackageOnAnyBuild = YES;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = Twitter;
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "atebitsy/atebitsy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F062C3B299D22140070637A /* Build configuration list for PBXProject "atebitsy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F062C61299D22140070637A /* Release */,
+				6F062C62299D22140070637A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F062C63299D22140070637A /* Build configuration list for PBXNativeTarget "atebitsy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F062C64299D22140070637A /* Release */,
+				6F062C65299D22140070637A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F062C69299D22C80070637A /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.2;
+			};
+		};
+		6F062C6C299D23A20070637A /* XCRemoteSwiftPackageReference "orion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/theos/orion";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F062C6A299D22C80070637A /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F062C69299D22C80070637A /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		6F062C6D299D23A20070637A /* Orion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F062C6C299D23A20070637A /* XCRemoteSwiftPackageReference "orion" */;
+			productName = Orion;
+		};
+		6F062C6F299D23AF0070637A /* OrionPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F062C6C299D23A20070637A /* XCRemoteSwiftPackageReference "orion" */;
+			productName = "plugin:OrionPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F062C38299D22140070637A /* Project object */;
+}
